@@ -4,7 +4,7 @@ permalink: /0.21.1/helm/v2beta1/helmRelease/
 
 # helm.v2beta1.helmRelease
 
-HelmRelease is the Schema for the helmreleases API
+"HelmRelease is the Schema for the helmreleases API"
 
 ## Index
 
@@ -118,11 +118,11 @@ HelmRelease is the Schema for the helmreleases API
 new(name)
 ```
 
-new returns an instance of Helmrelease
+new returns an instance of HelmRelease
 
 ## obj metadata
 
-ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create.
+"ObjectMeta is metadata that all persisted resources must have, which includes all objects users must create."
 
 ### fn metadata.withAnnotations
 
@@ -130,7 +130,7 @@ ObjectMeta is metadata that all persisted resources must have, which includes al
 withAnnotations(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 ### fn metadata.withAnnotationsMixin
 
@@ -138,7 +138,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withAnnotationsMixin(annotations)
 ```
 
-Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations
+"Annotations is an unstructured key value map stored with a resource that may be set by external tools to store and retrieve arbitrary metadata. They are not queryable and should be preserved when modifying objects. More info: http://kubernetes.io/docs/user-guide/annotations"
 
 **Note:** This function appends passed data to existing values
 
@@ -148,7 +148,7 @@ Annotations is an unstructured key value map stored with a resource that may be 
 withClusterName(clusterName)
 ```
 
-The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
+"The name of the cluster which the object belongs to. This is used to distinguish resources with same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request."
 
 ### fn metadata.withCreationTimestamp
 
@@ -156,7 +156,7 @@ The name of the cluster which the object belongs to. This is used to distinguish
 withCreationTimestamp(creationTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withDeletionGracePeriodSeconds
 
@@ -164,7 +164,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withDeletionGracePeriodSeconds(deletionGracePeriodSeconds)
 ```
 
-Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
+"Number of seconds allowed for this object to gracefully terminate before it will be removed from the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only."
 
 ### fn metadata.withDeletionTimestamp
 
@@ -172,7 +172,7 @@ Number of seconds allowed for this object to gracefully terminate before it will
 withDeletionTimestamp(deletionTimestamp)
 ```
 
-Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers.
+"Time is a wrapper around time.Time which supports correct marshaling to YAML and JSON.  Wrappers are provided for many of the factory methods that the time package offers."
 
 ### fn metadata.withFinalizers
 
@@ -180,7 +180,7 @@ Time is a wrapper around time.Time which supports correct marshaling to YAML and
 withFinalizers(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 ### fn metadata.withFinalizersMixin
 
@@ -188,7 +188,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withFinalizersMixin(finalizers)
 ```
 
-Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list.
+"Must be empty before the object is deleted from the registry. Each entry is an identifier for the responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. Finalizers may be processed and removed in any order.  Order is NOT enforced because it introduces significant risk of stuck finalizers. finalizers is a shared field, any actor with permission can reorder it. If the finalizer list is processed in order, then this can lead to a situation in which the component responsible for the first finalizer in the list is waiting for a signal (field value, external system, or other) produced by a component responsible for a finalizer later in the list, resulting in a deadlock. Without enforced ordering finalizers are free to order amongst themselves and are not vulnerable to ordering changes in the list."
 
 **Note:** This function appends passed data to existing values
 
@@ -198,11 +198,7 @@ Must be empty before the object is deleted from the registry. Each entry is an i
 withGenerateName(generateName)
 ```
 
-GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.
-
-If this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).
-
-Applied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency
+"GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name field has not been provided. If this field is used, the name returned to the client will be different than the name passed. This value will also be combined with a unique suffix. The provided value has the same validation rules as the Name field, and may be truncated by the length of the suffix required to make the value unique on the server.\n\nIf this field is specified and the generated name exists, the server will NOT return a 409 - instead, it will either return 201 Created or 500 with Reason ServerTimeout indicating a unique name could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header).\n\nApplied only if Name is not specified. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#idempotency"
 
 ### fn metadata.withGeneration
 
@@ -210,7 +206,7 @@ Applied only if Name is not specified. More info: https://git.k8s.io/community/c
 withGeneration(generation)
 ```
 
-A sequence number representing a specific generation of the desired state. Populated by the system. Read-only.
+"A sequence number representing a specific generation of the desired state. Populated by the system. Read-only."
 
 ### fn metadata.withLabels
 
@@ -218,7 +214,7 @@ A sequence number representing a specific generation of the desired state. Popul
 withLabels(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 ### fn metadata.withLabelsMixin
 
@@ -226,7 +222,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withLabelsMixin(labels)
 ```
 
-Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels
+"Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
 
 **Note:** This function appends passed data to existing values
 
@@ -236,7 +232,7 @@ Map of string keys and values that can be used to organize and categorize (scope
 withManagedFields(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 ### fn metadata.withManagedFieldsMixin
 
@@ -244,7 +240,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withManagedFieldsMixin(managedFields)
 ```
 
-ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like 'ci-cd'. The set of fields is always in the version that the workflow used when modifying the object.
+"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -254,7 +250,7 @@ ManagedFields maps workflow-id and version to the set of fields that are managed
 withName(name)
 ```
 
-Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names
+"Name must be unique within a namespace. Is required when creating resources, although some resources may allow a client to request the generation of an appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/identifiers#names"
 
 ### fn metadata.withNamespace
 
@@ -262,9 +258,7 @@ Name must be unique within a namespace. Is required when creating resources, alt
 withNamespace(namespace)
 ```
 
-Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the "default" namespace, but "default" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.
-
-Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces
+"Namespace defines the space within which each name must be unique. An empty namespace is equivalent to the \"default\" namespace, but \"default\" is the canonical representation. Not all objects are required to be scoped to a namespace - the value of this field for those objects will be empty.\n\nMust be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/user-guide/namespaces"
 
 ### fn metadata.withOwnerReferences
 
@@ -272,7 +266,7 @@ Must be a DNS_LABEL. Cannot be updated. More info: http://kubernetes.io/docs/use
 withOwnerReferences(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 ### fn metadata.withOwnerReferencesMixin
 
@@ -280,7 +274,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withOwnerReferencesMixin(ownerReferences)
 ```
 
-List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller.
+"List of objects depended by this object. If ALL objects in the list have been deleted, this object will be garbage collected. If this object is managed by a controller, then an entry in this list will point to this controller, with the controller field set to true. There cannot be more than one managing controller."
 
 **Note:** This function appends passed data to existing values
 
@@ -290,9 +284,7 @@ List of objects depended by this object. If ALL objects in the list have been de
 withResourceVersion(resourceVersion)
 ```
 
-An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.
-
-Populated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
+"An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic concurrency, change detection, and the watch operation on a resource or set of resources. Clients must treat these values as opaque and passed unmodified back to the server. They may only be valid for a particular resource or set of resources.\n\nPopulated by the system. Read-only. Value must be treated as opaque by clients and . More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency"
 
 ### fn metadata.withSelfLink
 
@@ -300,9 +292,7 @@ Populated by the system. Read-only. Value must be treated as opaque by clients a
 withSelfLink(selfLink)
 ```
 
-SelfLink is a URL representing this object. Populated by the system. Read-only.
-
-DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release.
+"SelfLink is a URL representing this object. Populated by the system. Read-only.\n\nDEPRECATED Kubernetes will stop propagating this field in 1.20 release and the field is planned to be removed in 1.21 release."
 
 ### fn metadata.withUid
 
@@ -310,13 +300,11 @@ DEPRECATED Kubernetes will stop propagating this field in 1.20 release and the f
 withUid(uid)
 ```
 
-UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.
-
-Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
+"UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on PUT operations.\n\nPopulated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids"
 
 ## obj spec
 
-HelmReleaseSpec defines the desired state of a Helm release.
+"HelmReleaseSpec defines the desired state of a Helm release."
 
 ### fn spec.withDependsOn
 
@@ -324,7 +312,7 @@ HelmReleaseSpec defines the desired state of a Helm release.
 withDependsOn(dependsOn)
 ```
 
-DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled.
+"DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled."
 
 ### fn spec.withDependsOnMixin
 
@@ -332,7 +320,7 @@ DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with 
 withDependsOnMixin(dependsOn)
 ```
 
-DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled.
+"DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled."
 
 **Note:** This function appends passed data to existing values
 
@@ -342,7 +330,7 @@ DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with 
 withInterval(interval)
 ```
 
-Interval at which to reconcile the Helm release.
+"Interval at which to reconcile the Helm release."
 
 ### fn spec.withMaxHistory
 
@@ -350,7 +338,7 @@ Interval at which to reconcile the Helm release.
 withMaxHistory(maxHistory)
 ```
 
-MaxHistory is the number of revisions saved by Helm for this HelmRelease. Use '0' for an unlimited number of revisions; defaults to '10'.
+"MaxHistory is the number of revisions saved by Helm for this HelmRelease. Use '0' for an unlimited number of revisions; defaults to '10'."
 
 ### fn spec.withPostRenderers
 
@@ -358,7 +346,7 @@ MaxHistory is the number of revisions saved by Helm for this HelmRelease. Use '0
 withPostRenderers(postRenderers)
 ```
 
-PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition.
+"PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition."
 
 ### fn spec.withPostRenderersMixin
 
@@ -366,7 +354,7 @@ PostRenderers holds an array of Helm PostRenderers, which will be applied in ord
 withPostRenderersMixin(postRenderers)
 ```
 
-PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition.
+"PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition."
 
 **Note:** This function appends passed data to existing values
 
@@ -376,7 +364,7 @@ PostRenderers holds an array of Helm PostRenderers, which will be applied in ord
 withReleaseName(releaseName)
 ```
 
-ReleaseName used for the Helm release. Defaults to a composition of '[TargetNamespace-]Name'.
+"ReleaseName used for the Helm release. Defaults to a composition of '[TargetNamespace-]Name'."
 
 ### fn spec.withServiceAccountName
 
@@ -384,7 +372,7 @@ ReleaseName used for the Helm release. Defaults to a composition of '[TargetName
 withServiceAccountName(serviceAccountName)
 ```
 
-The name of the Kubernetes service account to impersonate when reconciling this HelmRelease.
+"The name of the Kubernetes service account to impersonate when reconciling this HelmRelease."
 
 ### fn spec.withStorageNamespace
 
@@ -392,7 +380,7 @@ The name of the Kubernetes service account to impersonate when reconciling this 
 withStorageNamespace(storageNamespace)
 ```
 
-StorageNamespace used for the Helm storage. Defaults to the namespace of the HelmRelease.
+"StorageNamespace used for the Helm storage. Defaults to the namespace of the HelmRelease."
 
 ### fn spec.withSuspend
 
@@ -400,7 +388,7 @@ StorageNamespace used for the Helm storage. Defaults to the namespace of the Hel
 withSuspend(suspend)
 ```
 
-Suspend tells the controller to suspend reconciliation for this HelmRelease, it does not apply to already started reconciliations. Defaults to false.
+"Suspend tells the controller to suspend reconciliation for this HelmRelease, it does not apply to already started reconciliations. Defaults to false."
 
 ### fn spec.withTargetNamespace
 
@@ -408,7 +396,7 @@ Suspend tells the controller to suspend reconciliation for this HelmRelease, it 
 withTargetNamespace(targetNamespace)
 ```
 
-TargetNamespace to target when performing operations for the HelmRelease. Defaults to the namespace of the HelmRelease.
+"TargetNamespace to target when performing operations for the HelmRelease. Defaults to the namespace of the HelmRelease."
 
 ### fn spec.withTimeout
 
@@ -416,7 +404,7 @@ TargetNamespace to target when performing operations for the HelmRelease. Defaul
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm action. Defaults to '5m0s'.
+"Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm action. Defaults to '5m0s'."
 
 ### fn spec.withValues
 
@@ -424,7 +412,7 @@ Timeout is the time to wait for any individual Kubernetes operation (like Jobs f
 withValues(values)
 ```
 
-Values holds the values for this Helm release.
+"Values holds the values for this Helm release."
 
 ### fn spec.withValuesFrom
 
@@ -432,7 +420,7 @@ Values holds the values for this Helm release.
 withValuesFrom(valuesFrom)
 ```
 
-ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged.
+"ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged."
 
 ### fn spec.withValuesFromMixin
 
@@ -440,17 +428,17 @@ ValuesFrom holds references to resources containing Helm values for this HelmRel
 withValuesFromMixin(valuesFrom)
 ```
 
-ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged.
+"ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged."
 
 **Note:** This function appends passed data to existing values
 
 ## obj spec.chart
 
-Chart defines the template of the v1beta1.HelmChart that should be created for this HelmRelease.
+"Chart defines the template of the v1beta1.HelmChart that should be created for this HelmRelease."
 
 ## obj spec.chart.spec
 
-Spec holds the template for the v1beta1.HelmChartSpec for this HelmRelease.
+"Spec holds the template for the v1beta1.HelmChartSpec for this HelmRelease."
 
 ### fn spec.chart.spec.withChart
 
@@ -458,7 +446,7 @@ Spec holds the template for the v1beta1.HelmChartSpec for this HelmRelease.
 withChart(chart)
 ```
 
-The name or path the Helm chart is available at in the SourceRef.
+"The name or path the Helm chart is available at in the SourceRef."
 
 ### fn spec.chart.spec.withInterval
 
@@ -466,7 +454,7 @@ The name or path the Helm chart is available at in the SourceRef.
 withInterval(interval)
 ```
 
-Interval at which to check the v1beta1.Source for updates. Defaults to 'HelmReleaseSpec.Interval'.
+"Interval at which to check the v1beta1.Source for updates. Defaults to 'HelmReleaseSpec.Interval'."
 
 ### fn spec.chart.spec.withReconcileStrategy
 
@@ -474,7 +462,7 @@ Interval at which to check the v1beta1.Source for updates. Defaults to 'HelmRele
 withReconcileStrategy(reconcileStrategy)
 ```
 
-Determines what enables the creation of a new artifact. Valid values are ('ChartVersion', 'Revision'). See the documentation of the values for an explanation on their behavior. Defaults to ChartVersion when omitted.
+"Determines what enables the creation of a new artifact. Valid values are ('ChartVersion', 'Revision'). See the documentation of the values for an explanation on their behavior. Defaults to ChartVersion when omitted."
 
 ### fn spec.chart.spec.withValuesFile
 
@@ -482,7 +470,7 @@ Determines what enables the creation of a new artifact. Valid values are ('Chart
 withValuesFile(valuesFile)
 ```
 
-Alternative values file to use as the default chart values, expected to be a relative path in the SourceRef. Deprecated in favor of ValuesFiles, for backwards compatibility the file defined here is merged before the ValuesFiles items. Ignored when omitted.
+"Alternative values file to use as the default chart values, expected to be a relative path in the SourceRef. Deprecated in favor of ValuesFiles, for backwards compatibility the file defined here is merged before the ValuesFiles items. Ignored when omitted."
 
 ### fn spec.chart.spec.withValuesFiles
 
@@ -490,7 +478,7 @@ Alternative values file to use as the default chart values, expected to be a rel
 withValuesFiles(valuesFiles)
 ```
 
-Alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted.
+"Alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted."
 
 ### fn spec.chart.spec.withValuesFilesMixin
 
@@ -498,7 +486,7 @@ Alternative list of values files to use as the chart values (values.yaml is not 
 withValuesFilesMixin(valuesFiles)
 ```
 
-Alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted.
+"Alternative list of values files to use as the chart values (values.yaml is not included by default), expected to be a relative path in the SourceRef. Values files are merged in the order of this list with the last file overriding the first. Ignored when omitted."
 
 **Note:** This function appends passed data to existing values
 
@@ -508,11 +496,11 @@ Alternative list of values files to use as the chart values (values.yaml is not 
 withVersion(version)
 ```
 
-Version semver expression, ignored for charts from v1beta1.GitRepository and v1beta1.Bucket sources. Defaults to latest when omitted.
+"Version semver expression, ignored for charts from v1beta1.GitRepository and v1beta1.Bucket sources. Defaults to latest when omitted."
 
 ## obj spec.chart.spec.sourceRef
 
-The name and namespace of the v1beta1.Source the chart is available at.
+"The name and namespace of the v1beta1.Source the chart is available at."
 
 ### fn spec.chart.spec.sourceRef.withApiVersion
 
@@ -520,7 +508,7 @@ The name and namespace of the v1beta1.Source the chart is available at.
 withApiVersion(apiVersion)
 ```
 
-APIVersion of the referent.
+"APIVersion of the referent."
 
 ### fn spec.chart.spec.sourceRef.withKind
 
@@ -528,7 +516,7 @@ APIVersion of the referent.
 withKind(kind)
 ```
 
-Kind of the referent.
+"Kind of the referent."
 
 ### fn spec.chart.spec.sourceRef.withName
 
@@ -536,7 +524,7 @@ Kind of the referent.
 withName(name)
 ```
 
-Name of the referent.
+"Name of the referent."
 
 ### fn spec.chart.spec.sourceRef.withNamespace
 
@@ -544,11 +532,11 @@ Name of the referent.
 withNamespace(namespace)
 ```
 
-Namespace of the referent.
+"Namespace of the referent."
 
 ## obj spec.install
 
-Install holds the configuration for Helm install actions for this HelmRelease.
+"Install holds the configuration for Helm install actions for this HelmRelease."
 
 ### fn spec.install.withCrds
 
@@ -556,11 +544,7 @@ Install holds the configuration for Helm install actions for this HelmRelease.
 withCrds(crds)
 ```
 
-CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Create` and if omitted CRDs are installed but not updated. 
- Skip: do neither install nor replace (update) any CRDs. 
- Create: new CRDs are created, existing CRDs are neither updated nor deleted. 
- CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. 
- By default, CRDs are applied (installed) during Helm install action. With this option users can opt-in to CRD replace existing CRDs on Helm install actions, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions.
+"CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Create` and if omitted CRDs are installed but not updated. \n Skip: do neither install nor replace (update) any CRDs. \n Create: new CRDs are created, existing CRDs are neither updated nor deleted. \n CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. \n By default, CRDs are applied (installed) during Helm install action. With this option users can opt-in to CRD replace existing CRDs on Helm install actions, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions."
 
 ### fn spec.install.withCreateNamespace
 
@@ -568,7 +552,7 @@ CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgr
 withCreateNamespace(createNamespace)
 ```
 
-CreateNamespace tells the Helm install action to create the HelmReleaseSpec.TargetNamespace if it does not exist yet. On uninstall, the namespace will not be garbage collected.
+"CreateNamespace tells the Helm install action to create the HelmReleaseSpec.TargetNamespace if it does not exist yet. On uninstall, the namespace will not be garbage collected."
 
 ### fn spec.install.withDisableHooks
 
@@ -576,7 +560,7 @@ CreateNamespace tells the Helm install action to create the HelmReleaseSpec.Targ
 withDisableHooks(disableHooks)
 ```
 
-DisableHooks prevents hooks from running during the Helm install action.
+"DisableHooks prevents hooks from running during the Helm install action."
 
 ### fn spec.install.withDisableOpenAPIValidation
 
@@ -584,7 +568,7 @@ DisableHooks prevents hooks from running during the Helm install action.
 withDisableOpenAPIValidation(disableOpenAPIValidation)
 ```
 
-DisableOpenAPIValidation prevents the Helm install action from validating rendered templates against the Kubernetes OpenAPI Schema.
+"DisableOpenAPIValidation prevents the Helm install action from validating rendered templates against the Kubernetes OpenAPI Schema."
 
 ### fn spec.install.withDisableWait
 
@@ -592,7 +576,7 @@ DisableOpenAPIValidation prevents the Helm install action from validating render
 withDisableWait(disableWait)
 ```
 
-DisableWait disables the waiting for resources to be ready after a Helm install has been performed.
+"DisableWait disables the waiting for resources to be ready after a Helm install has been performed."
 
 ### fn spec.install.withDisableWaitForJobs
 
@@ -600,7 +584,7 @@ DisableWait disables the waiting for resources to be ready after a Helm install 
 withDisableWaitForJobs(disableWaitForJobs)
 ```
 
-DisableWaitForJobs disables waiting for jobs to complete after a Helm install has been performed.
+"DisableWaitForJobs disables waiting for jobs to complete after a Helm install has been performed."
 
 ### fn spec.install.withReplace
 
@@ -608,7 +592,7 @@ DisableWaitForJobs disables waiting for jobs to complete after a Helm install ha
 withReplace(replace)
 ```
 
-Replace tells the Helm install action to re-use the 'ReleaseName', but only if that name is a deleted release which remains in the history.
+"Replace tells the Helm install action to re-use the 'ReleaseName', but only if that name is a deleted release which remains in the history."
 
 ### fn spec.install.withSkipCRDs
 
@@ -616,8 +600,7 @@ Replace tells the Helm install action to re-use the 'ReleaseName', but only if t
 withSkipCRDs(skipCRDs)
 ```
 
-SkipCRDs tells the Helm install action to not install any CRDs. By default, CRDs are installed if not already present. 
- Deprecated use CRD policy (`crds`) attribute with value `Skip` instead.
+"SkipCRDs tells the Helm install action to not install any CRDs. By default, CRDs are installed if not already present. \n Deprecated use CRD policy (`crds`) attribute with value `Skip` instead."
 
 ### fn spec.install.withTimeout
 
@@ -625,11 +608,11 @@ SkipCRDs tells the Helm install action to not install any CRDs. By default, CRDs
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm install action. Defaults to 'HelmReleaseSpec.Timeout'.
+"Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm install action. Defaults to 'HelmReleaseSpec.Timeout'."
 
 ## obj spec.install.remediation
 
-Remediation holds the remediation configuration for when the Helm install action for the HelmRelease fails. The default is to not perform any action.
+"Remediation holds the remediation configuration for when the Helm install action for the HelmRelease fails. The default is to not perform any action."
 
 ### fn spec.install.remediation.withIgnoreTestFailures
 
@@ -637,7 +620,7 @@ Remediation holds the remediation configuration for when the Helm install action
 withIgnoreTestFailures(ignoreTestFailures)
 ```
 
-IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an install action but fail. Defaults to 'Test.IgnoreFailures'.
+"IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an install action but fail. Defaults to 'Test.IgnoreFailures'."
 
 ### fn spec.install.remediation.withRemediateLastFailure
 
@@ -645,7 +628,7 @@ IgnoreTestFailures tells the controller to skip remediation when the Helm tests 
 withRemediateLastFailure(remediateLastFailure)
 ```
 
-RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false'.
+"RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false'."
 
 ### fn spec.install.remediation.withRetries
 
@@ -653,15 +636,15 @@ RemediateLastFailure tells the controller to remediate the last failure, when no
 withRetries(retries)
 ```
 
-Retries is the number of retries that should be attempted on failures before bailing. Remediation, using an uninstall, is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries.
+"Retries is the number of retries that should be attempted on failures before bailing. Remediation, using an uninstall, is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries."
 
 ## obj spec.kubeConfig
 
-KubeConfig for reconciling the HelmRelease on a remote cluster. When specified, KubeConfig takes precedence over ServiceAccountName.
+"KubeConfig for reconciling the HelmRelease on a remote cluster. When specified, KubeConfig takes precedence over ServiceAccountName."
 
 ## obj spec.kubeConfig.secretRef
 
-SecretRef holds the name to a secret that contains a 'value' key with the kubeconfig file as the value. It must be in the same namespace as the HelmRelease. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling the HelmRelease.
+"SecretRef holds the name to a secret that contains a 'value' key with the kubeconfig file as the value. It must be in the same namespace as the HelmRelease. It is recommended that the kubeconfig is self-contained, and the secret is regularly updated if credentials such as a cloud-access-token expire. Cloud specific `cmd-path` auth helpers will not function without adding binaries and credentials to the Pod that is responsible for reconciling the HelmRelease."
 
 ### fn spec.kubeConfig.secretRef.withName
 
@@ -669,11 +652,11 @@ SecretRef holds the name to a secret that contains a 'value' key with the kubeco
 withName(name)
 ```
 
-Name of the referent
+"Name of the referent"
 
 ## obj spec.rollback
 
-Rollback holds the configuration for Helm rollback actions for this HelmRelease.
+"Rollback holds the configuration for Helm rollback actions for this HelmRelease."
 
 ### fn spec.rollback.withCleanupOnFail
 
@@ -681,7 +664,7 @@ Rollback holds the configuration for Helm rollback actions for this HelmRelease.
 withCleanupOnFail(cleanupOnFail)
 ```
 
-CleanupOnFail allows deletion of new resources created during the Helm rollback action when it fails.
+"CleanupOnFail allows deletion of new resources created during the Helm rollback action when it fails."
 
 ### fn spec.rollback.withDisableHooks
 
@@ -689,7 +672,7 @@ CleanupOnFail allows deletion of new resources created during the Helm rollback 
 withDisableHooks(disableHooks)
 ```
 
-DisableHooks prevents hooks from running during the Helm rollback action.
+"DisableHooks prevents hooks from running during the Helm rollback action."
 
 ### fn spec.rollback.withDisableWait
 
@@ -697,7 +680,7 @@ DisableHooks prevents hooks from running during the Helm rollback action.
 withDisableWait(disableWait)
 ```
 
-DisableWait disables the waiting for resources to be ready after a Helm rollback has been performed.
+"DisableWait disables the waiting for resources to be ready after a Helm rollback has been performed."
 
 ### fn spec.rollback.withDisableWaitForJobs
 
@@ -705,7 +688,7 @@ DisableWait disables the waiting for resources to be ready after a Helm rollback
 withDisableWaitForJobs(disableWaitForJobs)
 ```
 
-DisableWaitForJobs disables waiting for jobs to complete after a Helm rollback has been performed.
+"DisableWaitForJobs disables waiting for jobs to complete after a Helm rollback has been performed."
 
 ### fn spec.rollback.withForce
 
@@ -713,7 +696,7 @@ DisableWaitForJobs disables waiting for jobs to complete after a Helm rollback h
 withForce(force)
 ```
 
-Force forces resource updates through a replacement strategy.
+"Force forces resource updates through a replacement strategy."
 
 ### fn spec.rollback.withRecreate
 
@@ -721,7 +704,7 @@ Force forces resource updates through a replacement strategy.
 withRecreate(recreate)
 ```
 
-Recreate performs pod restarts for the resource if applicable.
+"Recreate performs pod restarts for the resource if applicable."
 
 ### fn spec.rollback.withTimeout
 
@@ -729,11 +712,11 @@ Recreate performs pod restarts for the resource if applicable.
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm rollback action. Defaults to 'HelmReleaseSpec.Timeout'.
+"Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm rollback action. Defaults to 'HelmReleaseSpec.Timeout'."
 
 ## obj spec.test
 
-Test holds the configuration for Helm test actions for this HelmRelease.
+"Test holds the configuration for Helm test actions for this HelmRelease."
 
 ### fn spec.test.withEnable
 
@@ -741,7 +724,7 @@ Test holds the configuration for Helm test actions for this HelmRelease.
 withEnable(enable)
 ```
 
-Enable enables Helm test actions for this HelmRelease after an Helm install or upgrade action has been performed.
+"Enable enables Helm test actions for this HelmRelease after an Helm install or upgrade action has been performed."
 
 ### fn spec.test.withIgnoreFailures
 
@@ -749,7 +732,7 @@ Enable enables Helm test actions for this HelmRelease after an Helm install or u
 withIgnoreFailures(ignoreFailures)
 ```
 
-IgnoreFailures tells the controller to skip remediation when the Helm tests are run but fail. Can be overwritten for tests run after install or upgrade actions in 'Install.IgnoreTestFailures' and 'Upgrade.IgnoreTestFailures'.
+"IgnoreFailures tells the controller to skip remediation when the Helm tests are run but fail. Can be overwritten for tests run after install or upgrade actions in 'Install.IgnoreTestFailures' and 'Upgrade.IgnoreTestFailures'."
 
 ### fn spec.test.withTimeout
 
@@ -757,11 +740,11 @@ IgnoreFailures tells the controller to skip remediation when the Helm tests are 
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation during the performance of a Helm test action. Defaults to 'HelmReleaseSpec.Timeout'.
+"Timeout is the time to wait for any individual Kubernetes operation during the performance of a Helm test action. Defaults to 'HelmReleaseSpec.Timeout'."
 
 ## obj spec.uninstall
 
-Uninstall holds the configuration for Helm uninstall actions for this HelmRelease.
+"Uninstall holds the configuration for Helm uninstall actions for this HelmRelease."
 
 ### fn spec.uninstall.withDisableHooks
 
@@ -769,7 +752,7 @@ Uninstall holds the configuration for Helm uninstall actions for this HelmReleas
 withDisableHooks(disableHooks)
 ```
 
-DisableHooks prevents hooks from running during the Helm rollback action.
+"DisableHooks prevents hooks from running during the Helm rollback action."
 
 ### fn spec.uninstall.withKeepHistory
 
@@ -777,7 +760,7 @@ DisableHooks prevents hooks from running during the Helm rollback action.
 withKeepHistory(keepHistory)
 ```
 
-KeepHistory tells Helm to remove all associated resources and mark the release as deleted, but retain the release history.
+"KeepHistory tells Helm to remove all associated resources and mark the release as deleted, but retain the release history."
 
 ### fn spec.uninstall.withTimeout
 
@@ -785,11 +768,11 @@ KeepHistory tells Helm to remove all associated resources and mark the release a
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm uninstall action. Defaults to 'HelmReleaseSpec.Timeout'.
+"Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm uninstall action. Defaults to 'HelmReleaseSpec.Timeout'."
 
 ## obj spec.upgrade
 
-Upgrade holds the configuration for Helm upgrade actions for this HelmRelease.
+"Upgrade holds the configuration for Helm upgrade actions for this HelmRelease."
 
 ### fn spec.upgrade.withCleanupOnFail
 
@@ -797,7 +780,7 @@ Upgrade holds the configuration for Helm upgrade actions for this HelmRelease.
 withCleanupOnFail(cleanupOnFail)
 ```
 
-CleanupOnFail allows deletion of new resources created during the Helm upgrade action when it fails.
+"CleanupOnFail allows deletion of new resources created during the Helm upgrade action when it fails."
 
 ### fn spec.upgrade.withCrds
 
@@ -805,11 +788,7 @@ CleanupOnFail allows deletion of new resources created during the Helm upgrade a
 withCrds(crds)
 ```
 
-CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Skip` and if omitted CRDs are neither installed nor upgraded. 
- Skip: do neither install nor replace (update) any CRDs. 
- Create: new CRDs are created, existing CRDs are neither updated nor deleted. 
- CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. 
- By default, CRDs are not applied during Helm upgrade action. With this option users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions.
+"CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgrade policy provided here. Valid values are `Skip`, `Create` or `CreateReplace`. Default is `Skip` and if omitted CRDs are neither installed nor upgraded. \n Skip: do neither install nor replace (update) any CRDs. \n Create: new CRDs are created, existing CRDs are neither updated nor deleted. \n CreateReplace: new CRDs are created, existing CRDs are updated (replaced) but not deleted. \n By default, CRDs are not applied during Helm upgrade action. With this option users can opt-in to CRD upgrade, which is not (yet) natively supported by Helm. https://helm.sh/docs/chart_best_practices/custom_resource_definitions."
 
 ### fn spec.upgrade.withDisableHooks
 
@@ -817,7 +796,7 @@ CRDs upgrade CRDs from the Helm Chart's crds directory according to the CRD upgr
 withDisableHooks(disableHooks)
 ```
 
-DisableHooks prevents hooks from running during the Helm upgrade action.
+"DisableHooks prevents hooks from running during the Helm upgrade action."
 
 ### fn spec.upgrade.withDisableOpenAPIValidation
 
@@ -825,7 +804,7 @@ DisableHooks prevents hooks from running during the Helm upgrade action.
 withDisableOpenAPIValidation(disableOpenAPIValidation)
 ```
 
-DisableOpenAPIValidation prevents the Helm upgrade action from validating rendered templates against the Kubernetes OpenAPI Schema.
+"DisableOpenAPIValidation prevents the Helm upgrade action from validating rendered templates against the Kubernetes OpenAPI Schema."
 
 ### fn spec.upgrade.withDisableWait
 
@@ -833,7 +812,7 @@ DisableOpenAPIValidation prevents the Helm upgrade action from validating render
 withDisableWait(disableWait)
 ```
 
-DisableWait disables the waiting for resources to be ready after a Helm upgrade has been performed.
+"DisableWait disables the waiting for resources to be ready after a Helm upgrade has been performed."
 
 ### fn spec.upgrade.withDisableWaitForJobs
 
@@ -841,7 +820,7 @@ DisableWait disables the waiting for resources to be ready after a Helm upgrade 
 withDisableWaitForJobs(disableWaitForJobs)
 ```
 
-DisableWaitForJobs disables waiting for jobs to complete after a Helm upgrade has been performed.
+"DisableWaitForJobs disables waiting for jobs to complete after a Helm upgrade has been performed."
 
 ### fn spec.upgrade.withForce
 
@@ -849,7 +828,7 @@ DisableWaitForJobs disables waiting for jobs to complete after a Helm upgrade ha
 withForce(force)
 ```
 
-Force forces resource updates through a replacement strategy.
+"Force forces resource updates through a replacement strategy."
 
 ### fn spec.upgrade.withPreserveValues
 
@@ -857,7 +836,7 @@ Force forces resource updates through a replacement strategy.
 withPreserveValues(preserveValues)
 ```
 
-PreserveValues will make Helm reuse the last release's values and merge in overrides from 'Values'. Setting this flag makes the HelmRelease non-declarative.
+"PreserveValues will make Helm reuse the last release's values and merge in overrides from 'Values'. Setting this flag makes the HelmRelease non-declarative."
 
 ### fn spec.upgrade.withTimeout
 
@@ -865,11 +844,11 @@ PreserveValues will make Helm reuse the last release's values and merge in overr
 withTimeout(timeout)
 ```
 
-Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm upgrade action. Defaults to 'HelmReleaseSpec.Timeout'.
+"Timeout is the time to wait for any individual Kubernetes operation (like Jobs for hooks) during the performance of a Helm upgrade action. Defaults to 'HelmReleaseSpec.Timeout'."
 
 ## obj spec.upgrade.remediation
 
-Remediation holds the remediation configuration for when the Helm upgrade action for the HelmRelease fails. The default is to not perform any action.
+"Remediation holds the remediation configuration for when the Helm upgrade action for the HelmRelease fails. The default is to not perform any action."
 
 ### fn spec.upgrade.remediation.withIgnoreTestFailures
 
@@ -877,7 +856,7 @@ Remediation holds the remediation configuration for when the Helm upgrade action
 withIgnoreTestFailures(ignoreTestFailures)
 ```
 
-IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an upgrade action but fail. Defaults to 'Test.IgnoreFailures'.
+"IgnoreTestFailures tells the controller to skip remediation when the Helm tests are run after an upgrade action but fail. Defaults to 'Test.IgnoreFailures'."
 
 ### fn spec.upgrade.remediation.withRemediateLastFailure
 
@@ -885,7 +864,7 @@ IgnoreTestFailures tells the controller to skip remediation when the Helm tests 
 withRemediateLastFailure(remediateLastFailure)
 ```
 
-RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false' unless 'Retries' is greater than 0.
+"RemediateLastFailure tells the controller to remediate the last failure, when no retries remain. Defaults to 'false' unless 'Retries' is greater than 0."
 
 ### fn spec.upgrade.remediation.withRetries
 
@@ -893,7 +872,7 @@ RemediateLastFailure tells the controller to remediate the last failure, when no
 withRetries(retries)
 ```
 
-Retries is the number of retries that should be attempted on failures before bailing. Remediation, using 'Strategy', is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries.
+"Retries is the number of retries that should be attempted on failures before bailing. Remediation, using 'Strategy', is performed between each attempt. Defaults to '0', a negative integer equals to unlimited retries."
 
 ### fn spec.upgrade.remediation.withStrategy
 
@@ -901,4 +880,4 @@ Retries is the number of retries that should be attempted on failures before bai
 withStrategy(strategy)
 ```
 
-Strategy to use for failure remediation. Defaults to 'rollback'.
+"Strategy to use for failure remediation. Defaults to 'rollback'."
