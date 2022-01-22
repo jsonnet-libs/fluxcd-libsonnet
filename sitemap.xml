@@ -2,492 +2,657 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/helm/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/helm/v2beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/helm/v2beta1/helmRelease/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha2/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha2/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1alpha2/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1beta1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1beta1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/image/v1beta1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/kustomize/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/kustomize/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/kustomize/v1beta1/kustomization/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/notification/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/notification/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/notification/v1beta1/alert/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/notification/v1beta1/provider/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/notification/v1beta1/receiver/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/v1beta1/bucket/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/v1beta1/gitRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/v1beta1/helmChart/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.17.2/source/v1beta1/helmRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/helm/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/helm/v2beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/helm/v2beta1/helmRelease/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha2/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha2/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1alpha2/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1beta1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1beta1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/image/v1beta1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/kustomize/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/kustomize/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/kustomize/v1beta1/kustomization/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/kustomize/v1beta2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/kustomize/v1beta2/kustomization/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/notification/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/notification/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/notification/v1beta1/alert/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/notification/v1beta1/provider/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/notification/v1beta1/receiver/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/v1beta1/bucket/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/v1beta1/gitRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/v1beta1/helmChart/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.21.1/source/v1beta1/helmRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/helm/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/helm/v2beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/helm/v2beta1/helmRelease/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha2/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha2/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1alpha2/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1beta1/imagePolicy/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1beta1/imageRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/image/v1beta1/imageUpdateAutomation/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/kustomize/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/kustomize/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/kustomize/v1beta1/kustomization/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/kustomize/v1beta2/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/kustomize/v1beta2/kustomization/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/notification/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/notification/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/notification/v1beta1/alert/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/notification/v1beta1/provider/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/notification/v1beta1/receiver/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/v1beta1/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/v1beta1/bucket/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/v1beta1/gitRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/v1beta1/helmChart/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.24.1/source/v1beta1/helmRepository/</loc>
-         <lastmod>2022-01-03</lastmod>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/helm/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/helm/v2beta1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/helm/v2beta1/helmRelease/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha1/imagePolicy/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha1/imageRepository/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha1/imageUpdateAutomation/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha2/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha2/imagePolicy/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha2/imageRepository/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1alpha2/imageUpdateAutomation/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1beta1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1beta1/imagePolicy/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1beta1/imageRepository/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/image/v1beta1/imageUpdateAutomation/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/kustomize/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/kustomize/v1beta1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/kustomize/v1beta1/kustomization/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/kustomize/v1beta2/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/kustomize/v1beta2/kustomization/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/notification/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/notification/v1beta1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/notification/v1beta1/alert/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/notification/v1beta1/provider/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/notification/v1beta1/receiver/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/v1beta1/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/v1beta1/bucket/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/v1beta1/gitRepository/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/v1beta1/helmChart/</loc>
+         <lastmod>2022-01-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jsonnet-libs.github.io/fluxcd-libsonnet/0.25.3/source/v1beta1/helmRepository/</loc>
+         <lastmod>2022-01-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
