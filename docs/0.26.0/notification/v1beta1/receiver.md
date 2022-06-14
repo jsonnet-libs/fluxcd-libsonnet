@@ -22,8 +22,6 @@ permalink: /0.26.0/notification/v1beta1/receiver/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -38,6 +36,11 @@ permalink: /0.26.0/notification/v1beta1/receiver/
   * [`fn withResourcesMixin(resources)`](#fn-specwithresourcesmixin)
   * [`fn withSuspend(suspend)`](#fn-specwithsuspend)
   * [`fn withType(type)`](#fn-specwithtype)
+  * [`obj spec.resources`](#obj-specresources)
+    * [`fn withApiVersion(apiVersion)`](#fn-specresourceswithapiversion)
+    * [`fn withKind(kind)`](#fn-specresourceswithkind)
+    * [`fn withName(name)`](#fn-specresourceswithname)
+    * [`fn withNamespace(namespace)`](#fn-specresourceswithnamespace)
   * [`obj spec.secretRef`](#obj-specsecretref)
     * [`fn withName(name)`](#fn-specsecretrefwithname)
 
@@ -157,24 +160,6 @@ withLabelsMixin(labels)
 
 **Note:** This function appends passed data to existing values
 
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-**Note:** This function appends passed data to existing values
-
 ### fn metadata.withName
 
 ```ts
@@ -288,6 +273,42 @@ withType(type)
 ```
 
 "Type of webhook sender, used to determine the validation procedure and payload deserialization."
+
+## obj spec.resources
+
+"A list of resources to be notified about changes."
+
+### fn spec.resources.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent"
+
+### fn spec.resources.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent"
+
+### fn spec.resources.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent"
+
+### fn spec.resources.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent"
 
 ## obj spec.secretRef
 

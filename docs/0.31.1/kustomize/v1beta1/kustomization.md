@@ -22,8 +22,6 @@ permalink: /0.31.1/kustomize/v1beta1/kustomization/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -58,14 +56,56 @@ permalink: /0.31.1/kustomize/v1beta1/kustomization/
     * [`fn withProvider(provider)`](#fn-specdecryptionwithprovider)
     * [`obj spec.decryption.secretRef`](#obj-specdecryptionsecretref)
       * [`fn withName(name)`](#fn-specdecryptionsecretrefwithname)
+  * [`obj spec.dependsOn`](#obj-specdependson)
+    * [`fn withName(name)`](#fn-specdependsonwithname)
+    * [`fn withNamespace(namespace)`](#fn-specdependsonwithnamespace)
+  * [`obj spec.healthChecks`](#obj-spechealthchecks)
+    * [`fn withApiVersion(apiVersion)`](#fn-spechealthcheckswithapiversion)
+    * [`fn withKind(kind)`](#fn-spechealthcheckswithkind)
+    * [`fn withName(name)`](#fn-spechealthcheckswithname)
+    * [`fn withNamespace(namespace)`](#fn-spechealthcheckswithnamespace)
+  * [`obj spec.images`](#obj-specimages)
+    * [`fn withDigest(digest)`](#fn-specimageswithdigest)
+    * [`fn withName(name)`](#fn-specimageswithname)
+    * [`fn withNewName(newName)`](#fn-specimageswithnewname)
+    * [`fn withNewTag(newTag)`](#fn-specimageswithnewtag)
   * [`obj spec.kubeConfig`](#obj-speckubeconfig)
     * [`obj spec.kubeConfig.secretRef`](#obj-speckubeconfigsecretref)
       * [`fn withName(name)`](#fn-speckubeconfigsecretrefwithname)
+  * [`obj spec.patches`](#obj-specpatches)
+    * [`fn withPatch(patch)`](#fn-specpatcheswithpatch)
+    * [`obj spec.patches.target`](#obj-specpatchestarget)
+      * [`fn withAnnotationSelector(annotationSelector)`](#fn-specpatchestargetwithannotationselector)
+      * [`fn withGroup(group)`](#fn-specpatchestargetwithgroup)
+      * [`fn withKind(kind)`](#fn-specpatchestargetwithkind)
+      * [`fn withLabelSelector(labelSelector)`](#fn-specpatchestargetwithlabelselector)
+      * [`fn withName(name)`](#fn-specpatchestargetwithname)
+      * [`fn withNamespace(namespace)`](#fn-specpatchestargetwithnamespace)
+      * [`fn withVersion(version)`](#fn-specpatchestargetwithversion)
+  * [`obj spec.patchesJson6902`](#obj-specpatchesjson6902)
+    * [`fn withPatch(patch)`](#fn-specpatchesjson6902withpatch)
+    * [`fn withPatchMixin(patch)`](#fn-specpatchesjson6902withpatchmixin)
+    * [`obj spec.patchesJson6902.patch`](#obj-specpatchesjson6902patch)
+      * [`fn withFrom(from)`](#fn-specpatchesjson6902patchwithfrom)
+      * [`fn withOp(op)`](#fn-specpatchesjson6902patchwithop)
+      * [`fn withPath(path)`](#fn-specpatchesjson6902patchwithpath)
+      * [`fn withValue(value)`](#fn-specpatchesjson6902patchwithvalue)
+    * [`obj spec.patchesJson6902.target`](#obj-specpatchesjson6902target)
+      * [`fn withAnnotationSelector(annotationSelector)`](#fn-specpatchesjson6902targetwithannotationselector)
+      * [`fn withGroup(group)`](#fn-specpatchesjson6902targetwithgroup)
+      * [`fn withKind(kind)`](#fn-specpatchesjson6902targetwithkind)
+      * [`fn withLabelSelector(labelSelector)`](#fn-specpatchesjson6902targetwithlabelselector)
+      * [`fn withName(name)`](#fn-specpatchesjson6902targetwithname)
+      * [`fn withNamespace(namespace)`](#fn-specpatchesjson6902targetwithnamespace)
+      * [`fn withVersion(version)`](#fn-specpatchesjson6902targetwithversion)
   * [`obj spec.postBuild`](#obj-specpostbuild)
     * [`fn withSubstitute(substitute)`](#fn-specpostbuildwithsubstitute)
     * [`fn withSubstituteFrom(substituteFrom)`](#fn-specpostbuildwithsubstitutefrom)
     * [`fn withSubstituteFromMixin(substituteFrom)`](#fn-specpostbuildwithsubstitutefrommixin)
     * [`fn withSubstituteMixin(substitute)`](#fn-specpostbuildwithsubstitutemixin)
+    * [`obj spec.postBuild.substituteFrom`](#obj-specpostbuildsubstitutefrom)
+      * [`fn withKind(kind)`](#fn-specpostbuildsubstitutefromwithkind)
+      * [`fn withName(name)`](#fn-specpostbuildsubstitutefromwithname)
   * [`obj spec.sourceRef`](#obj-specsourceref)
     * [`fn withApiVersion(apiVersion)`](#fn-specsourcerefwithapiversion)
     * [`fn withKind(kind)`](#fn-specsourcerefwithkind)
@@ -185,24 +225,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -480,6 +502,98 @@ withName(name)
 
 "Name of the referent."
 
+## obj spec.dependsOn
+
+"DependsOn may contain a meta.NamespacedObjectReference slice with references to Kustomization resources that must be ready before this Kustomization can be reconciled."
+
+### fn spec.dependsOn.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent."
+
+### fn spec.dependsOn.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent, when not specified it acts as LocalObjectReference."
+
+## obj spec.healthChecks
+
+"A list of resources to be included in the health assessment."
+
+### fn spec.healthChecks.withApiVersion
+
+```ts
+withApiVersion(apiVersion)
+```
+
+"API version of the referent, if not specified the Kubernetes preferred version will be used."
+
+### fn spec.healthChecks.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the referent."
+
+### fn spec.healthChecks.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent."
+
+### fn spec.healthChecks.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace of the referent, when not specified it acts as LocalObjectReference."
+
+## obj spec.images
+
+"Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify."
+
+### fn spec.images.withDigest
+
+```ts
+withDigest(digest)
+```
+
+"Digest is the value used to replace the original image tag. If digest is present NewTag value is ignored."
+
+### fn spec.images.withName
+
+```ts
+withName(name)
+```
+
+"Name is a tag-less image name."
+
+### fn spec.images.withNewName
+
+```ts
+withNewName(newName)
+```
+
+"NewName is the value used to replace the original name."
+
+### fn spec.images.withNewTag
+
+```ts
+withNewTag(newTag)
+```
+
+"NewTag is the value used to replace the original tag."
+
 ## obj spec.kubeConfig
 
 "The KubeConfig for reconciling the Kustomization on a remote cluster. When specified, KubeConfig takes precedence over ServiceAccountName."
@@ -495,6 +609,196 @@ withName(name)
 ```
 
 "Name of the referent."
+
+## obj spec.patches
+
+"Strategic merge and JSON patches, defined as inline YAML objects, capable of targeting objects based on kind, label and annotation selectors."
+
+### fn spec.patches.withPatch
+
+```ts
+withPatch(patch)
+```
+
+"Patch contains an inline StrategicMerge patch or an inline JSON6902 patch with an array of operation objects."
+
+## obj spec.patches.target
+
+"Target points to the resources that the patch document should be applied to."
+
+### fn spec.patches.target.withAnnotationSelector
+
+```ts
+withAnnotationSelector(annotationSelector)
+```
+
+"AnnotationSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource annotations."
+
+### fn spec.patches.target.withGroup
+
+```ts
+withGroup(group)
+```
+
+"Group is the API group to select resources from. Together with Version and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.patches.target.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the API Group to select resources from. Together with Group and Version it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.patches.target.withLabelSelector
+
+```ts
+withLabelSelector(labelSelector)
+```
+
+"LabelSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource labels."
+
+### fn spec.patches.target.withName
+
+```ts
+withName(name)
+```
+
+"Name to match resources with."
+
+### fn spec.patches.target.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace to select resources from."
+
+### fn spec.patches.target.withVersion
+
+```ts
+withVersion(version)
+```
+
+"Version of the API Group to select resources from. Together with Group and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+## obj spec.patchesJson6902
+
+"JSON 6902 patches, defined as inline YAML objects."
+
+### fn spec.patchesJson6902.withPatch
+
+```ts
+withPatch(patch)
+```
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+### fn spec.patchesJson6902.withPatchMixin
+
+```ts
+withPatchMixin(patch)
+```
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.patchesJson6902.patch
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+### fn spec.patchesJson6902.patch.withFrom
+
+```ts
+withFrom(from)
+```
+
+"From contains a JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations."
+
+### fn spec.patchesJson6902.patch.withOp
+
+```ts
+withOp(op)
+```
+
+"Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or \"test\". https://datatracker.ietf.org/doc/html/rfc6902#section-4"
+
+### fn spec.patchesJson6902.patch.withPath
+
+```ts
+withPath(path)
+```
+
+"Path contains the JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op."
+
+### fn spec.patchesJson6902.patch.withValue
+
+```ts
+withValue(value)
+```
+
+"Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations."
+
+## obj spec.patchesJson6902.target
+
+"Target points to the resources that the patch document should be applied to."
+
+### fn spec.patchesJson6902.target.withAnnotationSelector
+
+```ts
+withAnnotationSelector(annotationSelector)
+```
+
+"AnnotationSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource annotations."
+
+### fn spec.patchesJson6902.target.withGroup
+
+```ts
+withGroup(group)
+```
+
+"Group is the API group to select resources from. Together with Version and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.patchesJson6902.target.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the API Group to select resources from. Together with Group and Version it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.patchesJson6902.target.withLabelSelector
+
+```ts
+withLabelSelector(labelSelector)
+```
+
+"LabelSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource labels."
+
+### fn spec.patchesJson6902.target.withName
+
+```ts
+withName(name)
+```
+
+"Name to match resources with."
+
+### fn spec.patchesJson6902.target.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace to select resources from."
+
+### fn spec.patchesJson6902.target.withVersion
+
+```ts
+withVersion(version)
+```
+
+"Version of the API Group to select resources from. Together with Group and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
 
 ## obj spec.postBuild
 
@@ -535,6 +839,26 @@ withSubstituteMixin(substitute)
 "Substitute holds a map of key/value pairs. The variables defined in your YAML manifests that match any of the keys defined in the map will be substituted with the set value. Includes support for bash string replacement functions e.g. ${var:=default}, ${var:position} and ${var/substring/replacement}."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.postBuild.substituteFrom
+
+"SubstituteFrom holds references to ConfigMaps and Secrets containing the variables and their values to be substituted in the YAML manifests. The ConfigMap and the Secret data keys represent the var names and they must match the vars declared in the manifests for the substitution to happen."
+
+### fn spec.postBuild.substituteFrom.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the values referent, valid values are ('Secret', 'ConfigMap')."
+
+### fn spec.postBuild.substituteFrom.withName
+
+```ts
+withName(name)
+```
+
+"Name of the values referent. Should reside in the same namespace as the referring resource."
 
 ## obj spec.sourceRef
 

@@ -22,8 +22,6 @@ permalink: /0.31.1/source/v1beta2/gitRepository/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -44,6 +42,14 @@ permalink: /0.31.1/source/v1beta2/gitRepository/
   * [`obj spec.accessFrom`](#obj-specaccessfrom)
     * [`fn withNamespaceSelectors(namespaceSelectors)`](#fn-specaccessfromwithnamespaceselectors)
     * [`fn withNamespaceSelectorsMixin(namespaceSelectors)`](#fn-specaccessfromwithnamespaceselectorsmixin)
+    * [`obj spec.accessFrom.namespaceSelectors`](#obj-specaccessfromnamespaceselectors)
+      * [`fn withMatchLabels(matchLabels)`](#fn-specaccessfromnamespaceselectorswithmatchlabels)
+      * [`fn withMatchLabelsMixin(matchLabels)`](#fn-specaccessfromnamespaceselectorswithmatchlabelsmixin)
+  * [`obj spec.include`](#obj-specinclude)
+    * [`fn withFromPath(fromPath)`](#fn-specincludewithfrompath)
+    * [`fn withToPath(toPath)`](#fn-specincludewithtopath)
+    * [`obj spec.include.repository`](#obj-specincluderepository)
+      * [`fn withName(name)`](#fn-specincluderepositorywithname)
   * [`obj spec.ref`](#obj-specref)
     * [`fn withBranch(branch)`](#fn-specrefwithbranch)
     * [`fn withCommit(commit)`](#fn-specrefwithcommit)
@@ -169,24 +175,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -347,6 +335,60 @@ withNamespaceSelectorsMixin(namespaceSelectors)
 "NamespaceSelectors is the list of namespace selectors to which this ACL applies. Items in this list are evaluated using a logical OR operation."
 
 **Note:** This function appends passed data to existing values
+
+## obj spec.accessFrom.namespaceSelectors
+
+"NamespaceSelectors is the list of namespace selectors to which this ACL applies. Items in this list are evaluated using a logical OR operation."
+
+### fn spec.accessFrom.namespaceSelectors.withMatchLabels
+
+```ts
+withMatchLabels(matchLabels)
+```
+
+"MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+### fn spec.accessFrom.namespaceSelectors.withMatchLabelsMixin
+
+```ts
+withMatchLabelsMixin(matchLabels)
+```
+
+"MatchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is \"key\", the operator is \"In\", and the values array contains only \"value\". The requirements are ANDed."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.include
+
+"Include specifies a list of GitRepository resources which Artifacts should be included in the Artifact produced for this GitRepository."
+
+### fn spec.include.withFromPath
+
+```ts
+withFromPath(fromPath)
+```
+
+"FromPath specifies the path to copy contents from, defaults to the root of the Artifact."
+
+### fn spec.include.withToPath
+
+```ts
+withToPath(toPath)
+```
+
+"ToPath specifies the path to copy contents to, defaults to the name of the GitRepositoryRef."
+
+## obj spec.include.repository
+
+"GitRepositoryRef specifies the GitRepository which Artifact contents must be included."
+
+### fn spec.include.repository.withName
+
+```ts
+withName(name)
+```
+
+"Name of the referent."
 
 ## obj spec.ref
 

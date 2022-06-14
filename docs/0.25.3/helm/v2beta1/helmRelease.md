@@ -22,8 +22,6 @@ permalink: /0.25.3/helm/v2beta1/helmRelease/
   * [`fn withGeneration(generation)`](#fn-metadatawithgeneration)
   * [`fn withLabels(labels)`](#fn-metadatawithlabels)
   * [`fn withLabelsMixin(labels)`](#fn-metadatawithlabelsmixin)
-  * [`fn withManagedFields(managedFields)`](#fn-metadatawithmanagedfields)
-  * [`fn withManagedFieldsMixin(managedFields)`](#fn-metadatawithmanagedfieldsmixin)
   * [`fn withName(name)`](#fn-metadatawithname)
   * [`fn withNamespace(namespace)`](#fn-metadatawithnamespace)
   * [`fn withOwnerReferences(ownerReferences)`](#fn-metadatawithownerreferences)
@@ -61,6 +59,9 @@ permalink: /0.25.3/helm/v2beta1/helmRelease/
         * [`fn withKind(kind)`](#fn-specchartspecsourcerefwithkind)
         * [`fn withName(name)`](#fn-specchartspecsourcerefwithname)
         * [`fn withNamespace(namespace)`](#fn-specchartspecsourcerefwithnamespace)
+  * [`obj spec.dependsOn`](#obj-specdependson)
+    * [`fn withName(name)`](#fn-specdependsonwithname)
+    * [`fn withNamespace(namespace)`](#fn-specdependsonwithnamespace)
   * [`obj spec.install`](#obj-specinstall)
     * [`fn withCrds(crds)`](#fn-specinstallwithcrds)
     * [`fn withCreateNamespace(createNamespace)`](#fn-specinstallwithcreatenamespace)
@@ -78,6 +79,35 @@ permalink: /0.25.3/helm/v2beta1/helmRelease/
   * [`obj spec.kubeConfig`](#obj-speckubeconfig)
     * [`obj spec.kubeConfig.secretRef`](#obj-speckubeconfigsecretref)
       * [`fn withName(name)`](#fn-speckubeconfigsecretrefwithname)
+  * [`obj spec.postRenderers`](#obj-specpostrenderers)
+    * [`obj spec.postRenderers.kustomize`](#obj-specpostrendererskustomize)
+      * [`fn withImages(images)`](#fn-specpostrendererskustomizewithimages)
+      * [`fn withImagesMixin(images)`](#fn-specpostrendererskustomizewithimagesmixin)
+      * [`fn withPatchesJson6902(patchesJson6902)`](#fn-specpostrendererskustomizewithpatchesjson6902)
+      * [`fn withPatchesJson6902Mixin(patchesJson6902)`](#fn-specpostrendererskustomizewithpatchesjson6902mixin)
+      * [`fn withPatchesStrategicMerge(patchesStrategicMerge)`](#fn-specpostrendererskustomizewithpatchesstrategicmerge)
+      * [`fn withPatchesStrategicMergeMixin(patchesStrategicMerge)`](#fn-specpostrendererskustomizewithpatchesstrategicmergemixin)
+      * [`obj spec.postRenderers.kustomize.images`](#obj-specpostrendererskustomizeimages)
+        * [`fn withDigest(digest)`](#fn-specpostrendererskustomizeimageswithdigest)
+        * [`fn withName(name)`](#fn-specpostrendererskustomizeimageswithname)
+        * [`fn withNewName(newName)`](#fn-specpostrendererskustomizeimageswithnewname)
+        * [`fn withNewTag(newTag)`](#fn-specpostrendererskustomizeimageswithnewtag)
+      * [`obj spec.postRenderers.kustomize.patchesJson6902`](#obj-specpostrendererskustomizepatchesjson6902)
+        * [`fn withPatch(patch)`](#fn-specpostrendererskustomizepatchesjson6902withpatch)
+        * [`fn withPatchMixin(patch)`](#fn-specpostrendererskustomizepatchesjson6902withpatchmixin)
+        * [`obj spec.postRenderers.kustomize.patchesJson6902.patch`](#obj-specpostrendererskustomizepatchesjson6902patch)
+          * [`fn withFrom(from)`](#fn-specpostrendererskustomizepatchesjson6902patchwithfrom)
+          * [`fn withOp(op)`](#fn-specpostrendererskustomizepatchesjson6902patchwithop)
+          * [`fn withPath(path)`](#fn-specpostrendererskustomizepatchesjson6902patchwithpath)
+          * [`fn withValue(value)`](#fn-specpostrendererskustomizepatchesjson6902patchwithvalue)
+        * [`obj spec.postRenderers.kustomize.patchesJson6902.target`](#obj-specpostrendererskustomizepatchesjson6902target)
+          * [`fn withAnnotationSelector(annotationSelector)`](#fn-specpostrendererskustomizepatchesjson6902targetwithannotationselector)
+          * [`fn withGroup(group)`](#fn-specpostrendererskustomizepatchesjson6902targetwithgroup)
+          * [`fn withKind(kind)`](#fn-specpostrendererskustomizepatchesjson6902targetwithkind)
+          * [`fn withLabelSelector(labelSelector)`](#fn-specpostrendererskustomizepatchesjson6902targetwithlabelselector)
+          * [`fn withName(name)`](#fn-specpostrendererskustomizepatchesjson6902targetwithname)
+          * [`fn withNamespace(namespace)`](#fn-specpostrendererskustomizepatchesjson6902targetwithnamespace)
+          * [`fn withVersion(version)`](#fn-specpostrendererskustomizepatchesjson6902targetwithversion)
   * [`obj spec.rollback`](#obj-specrollback)
     * [`fn withCleanupOnFail(cleanupOnFail)`](#fn-specrollbackwithcleanuponfail)
     * [`fn withDisableHooks(disableHooks)`](#fn-specrollbackwithdisablehooks)
@@ -109,6 +139,12 @@ permalink: /0.25.3/helm/v2beta1/helmRelease/
       * [`fn withRemediateLastFailure(remediateLastFailure)`](#fn-specupgraderemediationwithremediatelastfailure)
       * [`fn withRetries(retries)`](#fn-specupgraderemediationwithretries)
       * [`fn withStrategy(strategy)`](#fn-specupgraderemediationwithstrategy)
+  * [`obj spec.valuesFrom`](#obj-specvaluesfrom)
+    * [`fn withKind(kind)`](#fn-specvaluesfromwithkind)
+    * [`fn withName(name)`](#fn-specvaluesfromwithname)
+    * [`fn withOptional(optional)`](#fn-specvaluesfromwithoptional)
+    * [`fn withTargetPath(targetPath)`](#fn-specvaluesfromwithtargetpath)
+    * [`fn withValuesKey(valuesKey)`](#fn-specvaluesfromwithvalueskey)
 
 ## Fields
 
@@ -223,24 +259,6 @@ withLabelsMixin(labels)
 ```
 
 "Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and services. More info: http://kubernetes.io/docs/user-guide/labels"
-
-**Note:** This function appends passed data to existing values
-
-### fn metadata.withManagedFields
-
-```ts
-withManagedFields(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
-
-### fn metadata.withManagedFieldsMixin
-
-```ts
-withManagedFieldsMixin(managedFields)
-```
-
-"ManagedFields maps workflow-id and version to the set of fields that are managed by that workflow. This is mostly for internal housekeeping, and users typically shouldn't need to set or understand this field. A workflow can be the user's name, a controller's name, or the name of a specific apply path like \"ci-cd\". The set of fields is always in the version that the workflow used when modifying the object."
 
 **Note:** This function appends passed data to existing values
 
@@ -534,6 +552,26 @@ withNamespace(namespace)
 
 "Namespace of the referent."
 
+## obj spec.dependsOn
+
+"DependsOn may contain a dependency.CrossNamespaceDependencyReference slice with references to HelmRelease resources that must be ready before this HelmRelease can be reconciled."
+
+### fn spec.dependsOn.withName
+
+```ts
+withName(name)
+```
+
+"Name holds the name reference of a dependency."
+
+### fn spec.dependsOn.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace holds the namespace reference of a dependency."
+
 ## obj spec.install
 
 "Install holds the configuration for Helm install actions for this HelmRelease."
@@ -653,6 +691,222 @@ withName(name)
 ```
 
 "Name of the referent"
+
+## obj spec.postRenderers
+
+"PostRenderers holds an array of Helm PostRenderers, which will be applied in order of their definition."
+
+## obj spec.postRenderers.kustomize
+
+"Kustomization to apply as PostRenderer."
+
+### fn spec.postRenderers.kustomize.withImages
+
+```ts
+withImages(images)
+```
+
+"Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify."
+
+### fn spec.postRenderers.kustomize.withImagesMixin
+
+```ts
+withImagesMixin(images)
+```
+
+"Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.postRenderers.kustomize.withPatchesJson6902
+
+```ts
+withPatchesJson6902(patchesJson6902)
+```
+
+"JSON 6902 patches, defined as inline YAML objects."
+
+### fn spec.postRenderers.kustomize.withPatchesJson6902Mixin
+
+```ts
+withPatchesJson6902Mixin(patchesJson6902)
+```
+
+"JSON 6902 patches, defined as inline YAML objects."
+
+**Note:** This function appends passed data to existing values
+
+### fn spec.postRenderers.kustomize.withPatchesStrategicMerge
+
+```ts
+withPatchesStrategicMerge(patchesStrategicMerge)
+```
+
+"Strategic merge patches, defined as inline YAML objects."
+
+### fn spec.postRenderers.kustomize.withPatchesStrategicMergeMixin
+
+```ts
+withPatchesStrategicMergeMixin(patchesStrategicMerge)
+```
+
+"Strategic merge patches, defined as inline YAML objects."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.postRenderers.kustomize.images
+
+"Images is a list of (image name, new name, new tag or digest) for changing image names, tags or digests. This can also be achieved with a patch, but this operator is simpler to specify."
+
+### fn spec.postRenderers.kustomize.images.withDigest
+
+```ts
+withDigest(digest)
+```
+
+"Digest is the value used to replace the original image tag. If digest is present NewTag value is ignored."
+
+### fn spec.postRenderers.kustomize.images.withName
+
+```ts
+withName(name)
+```
+
+"Name is a tag-less image name."
+
+### fn spec.postRenderers.kustomize.images.withNewName
+
+```ts
+withNewName(newName)
+```
+
+"NewName is the value used to replace the original name."
+
+### fn spec.postRenderers.kustomize.images.withNewTag
+
+```ts
+withNewTag(newTag)
+```
+
+"NewTag is the value used to replace the original tag."
+
+## obj spec.postRenderers.kustomize.patchesJson6902
+
+"JSON 6902 patches, defined as inline YAML objects."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.withPatch
+
+```ts
+withPatch(patch)
+```
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.withPatchMixin
+
+```ts
+withPatchMixin(patch)
+```
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+**Note:** This function appends passed data to existing values
+
+## obj spec.postRenderers.kustomize.patchesJson6902.patch
+
+"Patch contains the JSON6902 patch document with an array of operation objects."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.patch.withFrom
+
+```ts
+withFrom(from)
+```
+
+"From contains a JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.patch.withOp
+
+```ts
+withOp(op)
+```
+
+"Op indicates the operation to perform. Its value MUST be one of \"add\", \"remove\", \"replace\", \"move\", \"copy\", or \"test\". https://datatracker.ietf.org/doc/html/rfc6902#section-4"
+
+### fn spec.postRenderers.kustomize.patchesJson6902.patch.withPath
+
+```ts
+withPath(path)
+```
+
+"Path contains the JSON-pointer value that references a location within the target document where the operation is performed. The meaning of the value depends on the value of Op."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.patch.withValue
+
+```ts
+withValue(value)
+```
+
+"Value contains a valid JSON structure. The meaning of the value depends on the value of Op, and is NOT taken into account by all operations."
+
+## obj spec.postRenderers.kustomize.patchesJson6902.target
+
+"Target points to the resources that the patch document should be applied to."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withAnnotationSelector
+
+```ts
+withAnnotationSelector(annotationSelector)
+```
+
+"AnnotationSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource annotations."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withGroup
+
+```ts
+withGroup(group)
+```
+
+"Group is the API group to select resources from. Together with Version and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the API Group to select resources from. Together with Group and Version it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withLabelSelector
+
+```ts
+withLabelSelector(labelSelector)
+```
+
+"LabelSelector is a string that follows the label selection expression https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#api It matches with the resource labels."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withName
+
+```ts
+withName(name)
+```
+
+"Name to match resources with."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withNamespace
+
+```ts
+withNamespace(namespace)
+```
+
+"Namespace to select resources from."
+
+### fn spec.postRenderers.kustomize.patchesJson6902.target.withVersion
+
+```ts
+withVersion(version)
+```
+
+"Version of the API Group to select resources from. Together with Group and Kind it is capable of unambiguously identifying and/or selecting resources. https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/api-group.md"
 
 ## obj spec.rollback
 
@@ -881,3 +1135,47 @@ withStrategy(strategy)
 ```
 
 "Strategy to use for failure remediation. Defaults to 'rollback'."
+
+## obj spec.valuesFrom
+
+"ValuesFrom holds references to resources containing Helm values for this HelmRelease, and information about how they should be merged."
+
+### fn spec.valuesFrom.withKind
+
+```ts
+withKind(kind)
+```
+
+"Kind of the values referent, valid values are ('Secret', 'ConfigMap')."
+
+### fn spec.valuesFrom.withName
+
+```ts
+withName(name)
+```
+
+"Name of the values referent. Should reside in the same namespace as the referring resource."
+
+### fn spec.valuesFrom.withOptional
+
+```ts
+withOptional(optional)
+```
+
+"Optional marks this ValuesReference as optional. When set, a not found error for the values reference is ignored, but any ValuesKey, TargetPath or transient error will still result in a reconciliation failure."
+
+### fn spec.valuesFrom.withTargetPath
+
+```ts
+withTargetPath(targetPath)
+```
+
+"TargetPath is the YAML dot notation path the value should be merged at. When set, the ValuesKey is expected to be a single flat value. Defaults to 'None', which results in the values getting merged at the root."
+
+### fn spec.valuesFrom.withValuesKey
+
+```ts
+withValuesKey(valuesKey)
+```
+
+"ValuesKey is the data key where the values.yaml or a specific value can be found at. Defaults to 'values.yaml'."
